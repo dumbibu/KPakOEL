@@ -17,24 +17,23 @@ public class UserManager {
     public boolean login(String username, String password) {
         for (User user : userList) {
             if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
-                return true; // Credentials matched, login successful
+                return true;
             }
         }
-        return false; // Invalid credentials
+        return false;
     }
 
     public boolean signup(User user) {
-        // Check if username or email already exists
         for (User existingUser : userList) {
             if (existingUser.getUsername().equals(user.getUsername()) ||
                     existingUser.getEmail().equals(user.getEmail())) {
-                return false; // Username or email already exists, signup failed
+                return false;
             }
         }
 
-        // Add the user to the list
+
         userList.add(user);
-        return true; // Signup successful
+        return true;
     }
 
     public String getUserRole(String username) {
@@ -43,7 +42,7 @@ public class UserManager {
                 return user.getRole();
             }
         }
-        return null; // User not found
+        return null;
     }
 }
 

@@ -6,4 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".ResponderDashboard">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="33dp"
+        android:text="Responder Dashboard"
+        app:layout_constraintBottom_toTopOf="@+id/mapView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView3"
+        android:layout_width="381dp"
+        android:layout_height="345dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="15dp"
+        android:text="See Reports"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="137dp"
+        android:text="Update Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
 </androidx.constraintlayout.widget.ConstraintLayout>

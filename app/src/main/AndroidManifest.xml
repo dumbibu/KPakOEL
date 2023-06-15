@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OEL"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBwQAQw436KvoZoFyIavStqQJO_ITfJa-8" />
         <activity
             android:name=".ResponderDashboard"
             android:exported="false" />

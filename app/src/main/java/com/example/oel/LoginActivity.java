@@ -37,19 +37,19 @@ public class LoginActivity extends AppCompatActivity {
                     String userRole = userManager.getUserRole(username);
 
                     if (userRole.equals("User")) {
-                        // Navigate to user dashboard
+
                         Intent intent = new Intent(LoginActivity.this, UserDashboard.class);
                         startActivity(intent);
                     } else if (userRole.equals("Responder")) {
-                        // Navigate to admin dashboard
+
                         Intent intent = new Intent(LoginActivity.this, ResponderDashboard.class);
                         startActivity(intent);
                     }
-                    // Clear the login fields
+
                     etUsername.setText("");
                     etPassword.setText("");
                 } else {
-                    // Display error message for invalid credentials
+
                     Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
                 }
             }
