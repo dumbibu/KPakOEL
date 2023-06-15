@@ -36,11 +36,11 @@ public class LoginActivity extends AppCompatActivity {
                 if (isAuthenticated) {
                     String userRole = userManager.getUserRole(username);
 
-                    if (userRole.equals("user")) {
+                    if (userRole.equals("User")) {
                         // Navigate to user dashboard
                         Intent intent = new Intent(LoginActivity.this, UserDashboard.class);
                         startActivity(intent);
-                    } else if (userRole.equals("admin")) {
+                    } else if (userRole.equals("Responder")) {
                         // Navigate to admin dashboard
                         Intent intent = new Intent(LoginActivity.this, ResponderDashboard.class);
                         startActivity(intent);
